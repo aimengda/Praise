@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praise</title>
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="border d-flex flex-column align-items-center justify-content-center" style="height: 100vh;">
+        <h1 class="text-center" id="praise_text">Your Are Ace!</h1>
+        <button type="button" class="btn btn-primary" onclick="refreshText();">Refresh</button>
+    </div>
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.js"></script>
+    <script>
+        function refreshText() {
+            var words = [
+                'Ace',
+                'Tremendous',
+                'Remarkable',
+                'Fabulous',
+                'Primo',
+                'Legendary',
+                'Tiptop',
+                'First-class',
+                'Incredible',
+                'Sensational',
+                'Adorable',
+                'Cute',
+                'Beautiful',
+                'Elegant',
+                'Imaginative',
+                'Talented',
+                'Unique',
+                'Glorious',
+                'Brilliant',
+                'Fantastic',
+                'Incomparable',
+                'Charming'
+            ];
+            var random = Math.floor(Math.random() * words.length);
+            document.getElementById('praise_text').innerText = "You Are " + words[random] + "!";
+        }
+
+    </script>
+</body>
+
+</html>
